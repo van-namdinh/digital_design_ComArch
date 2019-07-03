@@ -1,0 +1,70 @@
+pwd
+# /home/vnd/WORK/HDLscodes/digital_design_ComArch_Harris/rtl
+vlog 4_38p222.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:42:16 on Jul 02,2019
+# vlog -reportprogress 300 4_38p222.sv 
+# -- Compiling module testbench2
+# 
+# Top level modules:
+# 	testbench2
+# End time: 18:42:16 on Jul 02,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim testbench2
+# vsim testbench2 
+# Start time: 18:42:24 on Jul 02,2019
+# Loading sv_std.std
+# Loading work.testbench2
+# Loading work.sillyfunction
+add wave -r /*
+run 100
+# ** Error: 000 failed.
+#    Time: 10 ps  Scope: testbench2 File: 4_38p222.sv Line: 22
+# ** Error: 001 failed.
+#    Time: 20 ps  Scope: testbench2 File: 4_38p222.sv Line: 24
+# ** Error: 010 failed.
+#    Time: 30 ps  Scope: testbench2 File: 4_38p222.sv Line: 26
+# ** Error: 011 failed.
+#    Time: 40 ps  Scope: testbench2 File: 4_38p222.sv Line: 28
+# ** Error: 100 failed.
+#    Time: 50 ps  Scope: testbench2 File: 4_38p222.sv Line: 30
+# ** Error: 101 failed.
+#    Time: 60 ps  Scope: testbench2 File: 4_38p222.sv Line: 32
+# ** Error: 110 failed.
+#    Time: 70 ps  Scope: testbench2 File: 4_38p222.sv Line: 34
+# ** Error: 111 failed.
+#    Time: 80 ps  Scope: testbench2 File: 4_38p222.sv Line: 36
+quit -sim
+# End time: 18:56:02 on Jul 02,2019, Elapsed time: 0:13:38
+# Errors: 8, Warnings: 0
+vlog and2test.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:56:07 on Jul 02,2019
+# vlog -reportprogress 300 and2test.sv 
+# -- Compiling module and2
+# 
+# Top level modules:
+# 	and2
+# End time: 18:56:07 on Jul 02,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog  tband2.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:56:12 on Jul 02,2019
+# vlog -reportprogress 300 tband2.sv 
+# -- Compiling module tband2
+# 
+# Top level modules:
+# 	tband2
+# End time: 18:56:12 on Jul 02,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim tband2
+# vsim tband2 
+# Start time: 18:56:18 on Jul 02,2019
+# Loading sv_std.std
+# Loading work.tband2
+# Loading work.and2
+add wave -r /*
+run 50
+exit
+# End time: 09:32:53 on Jul 03,2019, Elapsed time: 14:36:35
+# Errors: 0, Warnings: 0
