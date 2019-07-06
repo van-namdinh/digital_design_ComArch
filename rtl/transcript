@@ -1,70 +1,85 @@
-pwd
-# /home/vnd/WORK/HDLscodes/digital_design_ComArch_Harris/rtl
-vlog 4_38p222.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:42:16 on Jul 02,2019
-# vlog -reportprogress 300 4_38p222.sv 
-# -- Compiling module testbench2
-# 
-# Top level modules:
-# 	testbench2
-# End time: 18:42:16 on Jul 02,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim testbench2
-# vsim testbench2 
-# Start time: 18:42:24 on Jul 02,2019
+# vsim tb_ex4_3 
+# Start time: 10:12:04 on Jul 06,2019
 # Loading sv_std.std
-# Loading work.testbench2
-# Loading work.sillyfunction
+# Loading work.tb_ex4_3
+# Loading work.xor4
 add wave -r /*
-run 100
-# ** Error: 000 failed.
-#    Time: 10 ps  Scope: testbench2 File: 4_38p222.sv Line: 22
-# ** Error: 001 failed.
-#    Time: 20 ps  Scope: testbench2 File: 4_38p222.sv Line: 24
-# ** Error: 010 failed.
-#    Time: 30 ps  Scope: testbench2 File: 4_38p222.sv Line: 26
-# ** Error: 011 failed.
-#    Time: 40 ps  Scope: testbench2 File: 4_38p222.sv Line: 28
-# ** Error: 100 failed.
-#    Time: 50 ps  Scope: testbench2 File: 4_38p222.sv Line: 30
-# ** Error: 101 failed.
-#    Time: 60 ps  Scope: testbench2 File: 4_38p222.sv Line: 32
-# ** Error: 110 failed.
-#    Time: 70 ps  Scope: testbench2 File: 4_38p222.sv Line: 34
-# ** Error: 111 failed.
-#    Time: 80 ps  Scope: testbench2 File: 4_38p222.sv Line: 36
+run 200
 quit -sim
-# End time: 18:56:02 on Jul 02,2019, Elapsed time: 0:13:38
-# Errors: 8, Warnings: 0
-vlog and2test.sv
+# End time: 10:13:04 on Jul 06,2019, Elapsed time: 0:01:00
+# Errors: 0, Warnings: 0
+vlog ex4_3p226_tb.sv
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:56:07 on Jul 02,2019
-# vlog -reportprogress 300 and2test.sv 
-# -- Compiling module and2
+# Start time: 10:13:08 on Jul 06,2019
+# vlog -reportprogress 300 ex4_3p226_tb.sv 
+# -- Compiling module tb_ex4_3
 # 
 # Top level modules:
-# 	and2
-# End time: 18:56:07 on Jul 02,2019, Elapsed time: 0:00:00
+# 	tb_ex4_3
+# End time: 10:13:08 on Jul 06,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vlog  tband2.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:56:12 on Jul 02,2019
-# vlog -reportprogress 300 tband2.sv 
-# -- Compiling module tband2
-# 
-# Top level modules:
-# 	tband2
-# End time: 18:56:12 on Jul 02,2019, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim tband2
-# vsim tband2 
-# Start time: 18:56:18 on Jul 02,2019
+vsim tb_ex4_3
+# vsim tb_ex4_3 
+# Start time: 10:13:24 on Jul 06,2019
 # Loading sv_std.std
-# Loading work.tband2
-# Loading work.and2
+# Loading work.tb_ex4_3
+# Loading work.xor4
 add wave -r /*
-run 50
+run 200
+# ** Error: 0101 failed.
+#    Time: 60 ps  Scope: tb_ex4_3 File: ex4_3p226_tb.sv Line: 27
+quit -sim
+# End time: 10:17:31 on Jul 06,2019, Elapsed time: 0:04:07
+# Errors: 1, Warnings: 0
+vlog ex4_3p226.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:17:41 on Jul 06,2019
+# vlog -reportprogress 300 ex4_3p226.sv 
+# -- Compiling module xor4
+# 
+# Top level modules:
+# 	xor4
+# End time: 10:17:41 on Jul 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim tb_ex4_3
+# vsim tb_ex4_3 
+# Start time: 10:17:57 on Jul 06,2019
+# Loading sv_std.std
+# Loading work.tb_ex4_3
+# Loading work.xor4
+add wave -r /*
+run 200
+# ** Error: 0101 failed.
+#    Time: 60 ps  Scope: tb_ex4_3 File: ex4_3p226_tb.sv Line: 27
+quit -sim
+# End time: 10:18:14 on Jul 06,2019, Elapsed time: 0:00:17
+# Errors: 1, Warnings: 0
+vlog example.tv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:18:36 on Jul 06,2019
+# vlog -reportprogress 300 example.tv 
+# ** Error: (vlog-13069) example.tv(1): near "1100": syntax error, unexpected INTEGER NUMBER, expecting class.
+# End time: 10:18:36 on Jul 06,2019, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# /home/vnd/WORKmixlater/source-codes/intelFPGA/16.1/modelsim_ase/linuxaloem/vlog failed.
+vlog ex4_3p226_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:18:57 on Jul 06,2019
+# vlog -reportprogress 300 ex4_3p226_tb.sv 
+# -- Compiling module tb_ex4_3
+# 
+# Top level modules:
+# 	tb_ex4_3
+# End time: 10:18:57 on Jul 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim tb_ex4_3
+# vsim tb_ex4_3 
+# Start time: 10:19:02 on Jul 06,2019
+# Loading sv_std.std
+# Loading work.tb_ex4_3
+# Loading work.xor4
+add wave -r /*
+run 200
 exit
-# End time: 09:32:53 on Jul 03,2019, Elapsed time: 14:36:35
+# End time: 19:51:20 on Jul 06,2019, Elapsed time: 9:32:18
 # Errors: 0, Warnings: 0
